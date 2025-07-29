@@ -1,0 +1,62 @@
+.ContactPage {
+  .title {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+    padding: 1rem 2rem 0 1rem;
+  }
+}
+.contactForm {
+  width: 700px;
+  max-width: 100%;
+  padding: 1rem;
+  margin-top: 1rem;
+  margin-inline: auto;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  label {
+    font-size: 0.8rem;
+  }
+  input,
+  textarea {
+    font-size: 0.9rem;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+    border-radius: 0.3rem;
+    background-color: whitesmoke;
+    padding: 0.7rem 1rem;
+    &:focus {
+      outline: 1px solid crimson;
+    }
+  }
+  fieldset {
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    flex: 1;
+  }
+  #messageBox,
+  #subjectField {
+    min-width: 100%;
+  }
+  #messageBox textarea {
+    height: 200px;
+  }
+  #submit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    padding: 0.5rem 2rem;
+    font-size: 0.9rem;
+    border-radius: 0.4rem;
+    background-color: crimson;
+    color: white;
+    cursor: pointer;
+    border: 1px solid rgba(128, 128, 128, 0.459);
+  }
+}

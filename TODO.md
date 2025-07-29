@@ -1,0 +1,3 @@
+- Move 'fetchProducts' to context
+- Move 'filteredProducts' to context
+- Add AI chatbot from POS-NSHM

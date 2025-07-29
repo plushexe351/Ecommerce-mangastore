@@ -1,0 +1,212 @@
+.AdminPanel {
+  header#heading {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    .title {
+      font-size: 1.5rem;
+      font-weight: 500;
+      letter-spacing: 1px;
+    }
+  }
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+  }
+
+  .btn--add-product {
+    padding: 1rem 3rem;
+    width: 800px;
+    max-width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-block: 2rem;
+    background-color: crimson;
+    border-radius: 3rem;
+    color: white;
+    cursor: pointer;
+  }
+
+  .stock-unavailability-alert {
+    color: red;
+  }
+  .form-modal {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.368);
+
+    top: 0;
+    left: 0;
+    z-index: 9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .product-view,
+  .product-form {
+    background-color: rgb(19, 19, 19);
+    width: 800px;
+    max-width: 90vw;
+    border-radius: 0.6rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.07);
+    padding: 2rem 1rem;
+    margin-bottom: 1rem;
+
+    .fakeMRP {
+      text-decoration: line-through;
+      // margin-right: 0.5rem;
+      color: crimson;
+    }
+
+    .actions {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .actions > * {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .product-view {
+    > :last-child {
+      flex: 1;
+    }
+  }
+
+  .product-form {
+    background-color: #75757549;
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 0.5rem;
+    label#upload-label {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      gap: 0.5rem;
+      cursor: pointer;
+      .upload-icon {
+        width: 2rem;
+        height: 2rem;
+      }
+    }
+
+    input {
+      font-size: 1rem;
+      width: 100%;
+      padding: 1rem;
+      border-radius: 0.4rem;
+      border: 1px solid gray;
+      outline: none;
+      &#image-upload {
+        display: none;
+      }
+    }
+    select {
+      font-size: 1rem;
+      width: max-content;
+      padding-block: 0.5rem;
+      border: none;
+      outline: none;
+    }
+    button {
+      all: unset;
+      margin-top: 1rem;
+      padding: 1rem 2rem;
+      background-color: white;
+      border-radius: 3rem;
+      color: black;
+      &:first-of-type {
+        margin-right: 0.5rem;
+      }
+      &:last-of-type {
+        background-color: crimson;
+        color: white;
+        border: none;
+      }
+    }
+  }
+
+  .view-image {
+    img {
+      height: 200px !important;
+      width: 200px !important;
+    }
+  }
+  .charts {
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    // min-height: 70vh;
+  }
+  .chart-container {
+    max-width: 100%;
+    width: 40%;
+    min-width: 300px;
+    flex: 1;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: rgb(32, 32, 32);
+    h2 {
+      color: white;
+      font-weight: normal;
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+  }
+  .sales-summary {
+    padding: 1rem;
+    width: 100%;
+    border-radius: 1rem;
+    background-color: rgb(32, 32, 32);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    > * {
+      border-radius: 0.75rem;
+      background-color: rgb(19, 19, 19);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem;
+      flex: 1;
+      font-size: 1.2rem;
+      .icon {
+        margin-right: 1rem;
+      }
+      span {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-left: auto;
+      }
+      .total-sales {
+        color: rgb(20, 223, 20);
+      }
+    }
+  }
+}
