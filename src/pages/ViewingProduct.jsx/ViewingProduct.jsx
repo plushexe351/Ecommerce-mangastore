@@ -12,6 +12,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 import { span } from "framer-motion/client";
 import Footer from "../../components/Footer";
+import Price from "../../components/Price";
 const ViewingProduct = () => {
   const { productId } = useParams();
   const Navigate = useNavigate();
@@ -132,54 +133,7 @@ const ViewingProduct = () => {
             </header>
             <div className="pricing">
               <p className="price">
-                {" "}
-                ₹
-                {viewingProduct.fakeMRP && (
-                  <>
-                    <span className="fakeMRP">
-                      {parseFloat(viewingProduct.fakeMRP)}
-                    </span>
-                    {viewingProduct.discount <= 0 && (
-                      <span className="MRP">
-                        {parseFloat(viewingProduct.MRP)}
-                      </span>
-                    )}
-                    {viewingProduct.discount >= 0 && (
-                      <>
-                        <span className="fakeMRP">
-                          {parseFloat(viewingProduct.MRP)}
-                        </span>
-                        <span className="MRP">
-                          {parseFloat(
-                            viewingProduct.MRP -
-                              (viewingProduct.discount / 100) *
-                                viewingProduct.MRP
-                          )}
-                        </span>
-                      </>
-                    )}
-                  </>
-                )}
-                {!viewingProduct.fakeMRP && viewingProduct.discount && (
-                  <>
-                    <span className="fakeMRP">
-                      {parseFloat(viewingProduct.MRP)}
-                    </span>
-                    <span className="MRP">
-                      {" "}
-                      {parseFloat(
-                        viewingProduct.MRP -
-                          (viewingProduct.discount / 100) *
-                            viewingProduct.MRP || viewingProduct.MRP
-                      )}
-                    </span>
-                  </>
-                )}
-                {!viewingProduct.fakeMRP && !viewingProduct.discount && (
-                  <>
-                    <p className="MRP">{viewingProduct.MRP}</p>
-                  </>
-                )}
+                <Price product={viewingProduct} />
               </p>
               <p className="tax-inclusion">incl. of taxes</p>
               <div className="other">(Also includes all applicable duties)</div>
