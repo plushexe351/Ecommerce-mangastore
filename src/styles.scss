@@ -10,11 +10,7 @@
     @content;
   }
 }
-@mixin selectImageBreakpoint {
-  @media screen and (max-width: 650px) {
-    @content;
-  }
-}
+
 @mixin mediumDevice {
   @media screen and (max-width: 750px) {
     @content;
