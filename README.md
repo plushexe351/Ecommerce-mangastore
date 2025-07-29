@@ -1,4 +1,4 @@
-# E-commerce App (Nike Clone)
+# E-commerce App (Mangastore)
 
 This project is an Ecommerce store for Manga, designed to provide users with a seamless shopping experience. The app is built using React for the frontend and Firebase for the backend. It is fully responsive and allows users to browse products, manage their cart, and place orders. Additionally, the app includes an admin panel for managing product listings, orders and sales.
 
