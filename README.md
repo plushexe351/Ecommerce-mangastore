@@ -1,6 +1,6 @@
 # E-commerce App (Nike Clone)
 
-This project is a clone of the Nike website, designed to provide users with a seamless shopping experience. The app is built using React for the frontend and Firebase for the backend. It is fully responsive and allows users to browse products, manage their cart, and place orders. Additionally, the app includes an admin panel for managing product listings.
+This project is an Ecommerce store for Manga, designed to provide users with a seamless shopping experience. The app is built using React for the frontend and Firebase for the backend. It is fully responsive and allows users to browse products, manage their cart, and place orders. Additionally, the app includes an admin panel for managing product listings, orders and sales.
 
 ## Features
 
@@ -22,10 +22,23 @@ This project is a clone of the Nike website, designed to provide users with a se
 - **Checkout**: Authenticated users can complete their purchase by providing their address and pincode.
 - **Order History**: Users can view their past orders in their profile.
 
+### Personalised Recommendations
+
+- **For you section**: The For you section smartly sorts and displays a list of products user might be interested in based on search history
+- **AI helper boosts personalised recommendations**: AI helped powered by Gemini acts a powerful natural language conversation tool for personalised recommendations
+
+
 ### Favorites
 
 - **Add to Favorites**: Users can mark products as favorites.
-- **Favorites Section**: (To-Do) Implement the feature to view all favorited items in a dedicated section.
+- **Favorites Section**
+- **Share your favorite products**
+
+### AI helper
+
+- **Product Recommendations**
+- **Navigation support**
+
 
 ## Technology Stack
 
