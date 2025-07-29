@@ -59,30 +59,30 @@ This project is an Ecommerce store for Manga, designed to provide users with a s
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/plushexe351/Nike-clone.git
+   git clone https://github.com/plushexe351/Ecommerce-mangastore.git
    ```
 
 2. Install Dependencies:
 
 ```bash
-cd Nike-clone
+cd Ecommerce-mangastore
 npm install
 ```
 
 3. Set up Firebase:
-   -Create a Firebase project.
-   -Enable Firestore and Google Authentication.
-   -Update the Firebase configuration in your project with your credentials.
+   - Create a Firebase project.
+   - Enable Firestore and Google Authentication.
+   - Update the Firebase configuration in your project with your credentials.
 
 4. Admin Panel Access
    To access the admin panel:
 
--Navigate to /admin.
--Log in with the provided username and password.
+- Navigate to /admin.
+- Log in with the provided username and password.
 
 ## To-Do List
 
--Favorites Section: Add a section to view all favorited products.
--Enhanced Order Details: Provide more detailed order information in the user profile.
--Admin Panel Enhancements: Implement additional features like bulk product uploads and analytics.
--Payment Integration: Integrate a payment gateway for processing orders.
+- Favorites Section: Add a section to view all favorited products.
+- Enhanced Order Details: Provide more detailed order information in the user profile.
+- Admin Panel Enhancements: Implement additional features like bulk product uploads and analytics.
+- Payment Integration: Integrate a payment gateway for processing orders.
